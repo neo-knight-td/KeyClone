@@ -1,0 +1,65 @@
+how to tune to freq below 28.8 MHz : https://groups.google.com/g/gqrx/c/-AruV_Eo1oo
+
+CH 1: 30875 -> AM -> NOK
+CH 2: 27120
+CH 3: 26995
+CH 4: 30900 
+
+AM :
+	CH 3 => NO SIGNAL
+	CH 2 => NO SIGNAL 
+	CH 1 => SIGNAL !!!
+	
+change antenna
+
+10110110010110010010110010110010
+
+30194800
+
+see ch5 file 
+30.194.800 kHz => big signal
+AM 
+
+11 bursts :
+1,2,3 => 
+1011001011011001011001001011001011001
+
+
+
+0.13 ms / burst
+pulse length = 13 ms/37 = 0.35 ms
+
+29.1748 MhZ ==>	 31.096 Mhz
+30 MhZ ==> 31.02 MhZ
+32 ==> 30.908
+
+30 ==> 30.5
+
+
+
+sudo sendook -f 433.5M -0 350 -1 350 -p 10000 -r 11 1011011001011001001011001011001
+1011011001011001001011001011001
+      1011011001011001001011001011001
+1011001011011001011001001011001011001
+
+0,4375 delta ms 438 µs / 31 = 
+31 * x 
+
+		
+TODO :
+	1. Measure output power @GPIO4
+	2. Install DIY ae
+	
+Frequencies ...
+	after try & error :
+	sudo sendook -f 30.6051M -0 350 -1 350 -p 10000 -r 11 10110110010110010010110010110010
+	sudo sendook -f 30.6049M -0 350 -1 350 -p 13000 -r 11 1011001011011001011001001011001011001
+v3	sudo sendook -f 30.6049M -0 369 -1 369 -p 12666 -r 11 1011001011011001011001001011001011001
+v5	sudo sendook -f 30.6049M -0 371 -1 371 -p 11416 -r 11 1011001011011001011001001011001011001 synth too long
+v6	sudo sendook -f 30.6049M -0 367 -1 367 -p 11416 -r 11 1011001011011001011001001011001011001 synth too short (4 samples)
+v7	sudo sendook -f 30.6049M -0 368 -1 368 -p 11416 -r 11 1011001011011001011001001011001011001 synth too short (3 samples) & pause too short (32 samples)
+v8	sudo sendook -f 30.6049M -0 370 -1 370 -p 11416 -r 11 1011001011011001011001001011001011001 synth too long
+v9	sudo sendook -f 30.6049M -0 368 -1 368 -p 12082 -r 11 1011001011011001011001001011001011001
+	for indicated freq of 31.994 with direct sampling LO @ 5MHz LNA 50 dB
+
+
