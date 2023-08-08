@@ -14,5 +14,14 @@ First step was to find out the carrier frequency. When installed close to the SD
 
 I could bring the signal in baseband (for further analysis) using the amplitude modulation parameter in Gqrx (the digital signal from the remote was a simple binary ASK). I recorded multiple samples of the signal and saw that everytime the same code was sent to the door. This major security breach made this project way more simple than I thought it would be.
 
-I used audacity to determine the code sent by remote :
+I used Audacity to determine the code sent by the remote :
 
+![myImage](block1_decoded.png)
+
+The radio frequency parameters were determined (carrier frequency, modulation type) together with the modulation signal. I could start with the next step of the project : generating the signal from my cloned remote.
+
+## Turning my Raspberry Pi into a garage door remote
+
+At the time I was not interested to invest much time in the harware side of my projects. Therefore I tried to create a clone of the remote with as little effort as possible. When browsing GitHub, I found out this wonderful repository : [rpitx](https://github.com/F5OEO/rpitx).
+
+The rpitx 
