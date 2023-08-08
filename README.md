@@ -38,7 +38,7 @@ sudo sendook -f 26.9946M -0 368 -1 368 -p 12082 -r 11 10110010110110010110010010
 
 The above command instructs the Raspberry pi to generate an On Off Keying signal with carrier frequency 26.9946 MHz, 368 µs pulse duration, 11 bursts and 12082 µs pause between each of them.
 
-I created a very simple code (maybe too simplistic) in bash that looped over this command. The file containing the useful code (tx.sh) is launched from the bashrc file at each start up. I connected my Pi to a battery on my bike. Whenever I approched the door of the garage, it opened automatically ! No need to remove a glove to press a button. Even better, I had my own key to open the garage door. No need to share one with the appartment owner.
+I created a very simple code (maybe too simplistic) in bash that looped over this command. The file containing the useful code - ```tx.sh``` - is launched from the bashrc file at each start up. I connected my Pi to a battery on my bike. Whenever I approched the door of the garage, it opened automatically ! No need to remove a glove to press a button. Even better, I had my own key to open the garage door. No need to share one with the appartment owner.
 
 ## Closing Remarks
 
